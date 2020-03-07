@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--color-black);
+  color: #a8afb3;
+
+  &__links-container {
+
+    max-width: 123rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 5rem 0;
+
+    & .footer__links {
+      &:nth-child(1) {
+        margin-right: 10rem;
+      }
+    }
+
+    & .footer__links-list {
+
+      list-style: none;
+      margin-right: 5rem;
+
+
+      & p {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+      }
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 1.7rem;
+        }
+
+        &:hover {
+          color: var(--color-white);
+        }
+
+        & .svg {
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-right: 5px;
+
+          fill: currentColor;
+        }
+
+        & a:link,
+        & a:visited {
+          font-size: 1.3rem;
+          color: #a8afb3;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--color-white);
+
+
+          }
+        }
+      }
+    }
+  }
+
+  & .copyright {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(137,147,153, 0.2);
+    max-width: 123rem;
+    margin: 0 auto;
+    &__text {
+
+      font-size: 1.3rem;
+
+      & .xiaomi__link:link,
+      & .xiaomi__link:visited {
+        text-decoration: none;
+        color: #717575;
+
+        &:hover {
+          color: rgb(255,103,10);
+        }
+      }
+    }
+  }
+}

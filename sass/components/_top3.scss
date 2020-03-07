@@ -1,0 +1,29 @@
+.top3__container {
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -8rem;
+  &-box {
+    overflow: hidden;
+    transition: box-shadow 0.4s;
+
+    &:not(:last-child) {
+      margin-right: 1.7rem;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+    }
+
+    &--1 {
+      
+    }
+    &--2 {
+      
+    }
+    &--3 {
+      
+    }
+  }
+}

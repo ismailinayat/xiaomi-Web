@@ -1,0 +1,395 @@
+/*
+
+*/
+:root {
+  --color-black: #212121;
+  --color-grey: #899399;
+  --color-white: #fff; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  box-sizing: border-box;
+  min-height: 100rem;
+  background-color: #ffffff; }
+
+.cta {
+  display: flex;
+  max-width: 123rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+  justify-content: space-between;
+  align-items: center; }
+  .cta__container-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .cta__container-input-email {
+    padding: 0.9rem;
+    padding-left: 2rem;
+    width: 25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    outline: none; }
+    .cta__container-input-email::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.6); }
+  .cta__container-input button {
+    margin-left: -2rem;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
+  .cta__container-text-left {
+    margin-right: 5rem; }
+  .cta__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 3px; }
+  .cta__paragraph {
+    font-size: 1.1rem;
+    color: #2e2d2d; }
+  .cta__container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem; }
+  .cta__container-text-right {
+    margin-right: 5rem; }
+  .cta__container-icon {
+    display: flex;
+    align-items: center;
+    height: 3rem; }
+    .cta__container-icon svg {
+      width: 1.7rem;
+      height: 1.7rem;
+      fill: rgba(0, 0, 0, 0.3); }
+      .cta__container-icon svg:not(:last-child) {
+        margin-right: 4rem; }
+    .cta__container-icon .facebook:hover {
+      fill: #4267b2; }
+    .cta__container-icon .youtube:hover {
+      fill: #ff1600; }
+    .cta__container-icon .insta:hover {
+      fill: #cc0b79; }
+    .cta__container-icon .twitter:hover {
+      fill: #56d5fd; }
+
+.footer {
+  background-color: var(--color-black);
+  color: #a8afb3; }
+  .footer__links-container {
+    max-width: 123rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 5rem 0; }
+    .footer__links-container .footer__links:nth-child(1) {
+      margin-right: 10rem; }
+    .footer__links-container .footer__links-list {
+      list-style: none;
+      margin-right: 5rem; }
+      .footer__links-container .footer__links-list p {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: uppercase; }
+      .footer__links-container .footer__links-list-item:not(:last-child) {
+        margin-bottom: 1.7rem; }
+      .footer__links-container .footer__links-list-item:hover {
+        color: var(--color-white); }
+      .footer__links-container .footer__links-list-item .svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 5px;
+        fill: currentColor; }
+      .footer__links-container .footer__links-list-item a:link,
+      .footer__links-container .footer__links-list-item a:visited {
+        font-size: 1.3rem;
+        color: #a8afb3;
+        text-decoration: none; }
+        .footer__links-container .footer__links-list-item a:link:hover,
+        .footer__links-container .footer__links-list-item a:visited:hover {
+          color: var(--color-white); }
+  .footer .copyright {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(137, 147, 153, 0.2);
+    max-width: 123rem;
+    margin: 0 auto; }
+    .footer .copyright__text {
+      font-size: 1.3rem; }
+      .footer .copyright__text .xiaomi__link:link,
+      .footer .copyright__text .xiaomi__link:visited {
+        text-decoration: none;
+        color: #717575; }
+        .footer .copyright__text .xiaomi__link:link:hover,
+        .footer .copyright__text .xiaomi__link:visited:hover {
+          color: #ff670a; }
+
+.wrap .navigation-main {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  width: 100%;
+  background-color: transparent;
+  transition: color 0.4s; }
+  .wrap .navigation-main__brand {
+    height: 6rem;
+    width: 5.6rem;
+    overflow: hidden;
+    position: relative;
+    margin-right: 26rem; }
+    .wrap .navigation-main__brand-img {
+      transition: all 0.2s;
+      position: absolute;
+      left: -5.6rem; }
+      .wrap .navigation-main__brand-img:hover {
+        left: 0; }
+  .wrap .navigation-main__list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    align-self: stretch; }
+    .wrap .navigation-main__list-item {
+      position: relative;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      cursor: default;
+      transition: color 0.2s; }
+      .wrap .navigation-main__list-item:not(:last-child) {
+        margin-right: 3.2rem; }
+      .wrap .navigation-main__list-item:hover {
+        color: #ff670a; }
+      .wrap .navigation-main__list-item a {
+        cursor: pointer; }
+
+/*
+.navigation-main__list-item:nth-child(1):hover ~ .sub-menus > .miphones {
+
+  display: block;
+  opacity: 1;
+  transform: translateY(21rem);
+}*/
+.slider {
+  width: 100%;
+  height: 80rem;
+  overflow: hidden;
+  position: relative;
+  top: -10rem;
+  z-index: -1; }
+  .slider__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; }
+    .slider__slide:first-child {
+      background: url(../img/Slider/F4-Mi-Note10-PC02.jpg) no-repeat center center/cover; }
+    .slider__slide:nth-child(2) {
+      background: url(../img/Slider/F3B-Global-PC.jpg) no-repeat center top/cover; }
+    .slider__slide:nth-child(3) {
+      background: url(../img/Slider/g7-Global-pc.jpg) no-repeat center top/cover; }
+    .slider__slide:nth-child(4) {
+      background: url(../img/Slider/u2-Banner-Design-Code-PC.jpg) no-repeat center top/cover; }
+  .slider__current {
+    opacity: 1; }
+  .slider__buttons--prev {
+    position: absolute;
+    top: 40%;
+    left: 3rem;
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s;
+    outline: none;
+    cursor: pointer; }
+    .slider__buttons--prev .svg-prev {
+      width: 5rem;
+      height: 5rem;
+      fill: var(--color-white); }
+    .slider__buttons--prev:hover {
+      transform: scale(1.2); }
+  .slider__buttons--next {
+    position: absolute;
+    color: white;
+    top: 40%;
+    right: 3rem;
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s;
+    outline: none;
+    cursor: pointer; }
+    .slider__buttons--next .svg-next {
+      width: 5rem;
+      height: 5rem;
+      fill: var(--color-white); }
+    .slider__buttons--next:hover {
+      transform: scale(1.2); }
+
+.star {
+  max-width: 120rem;
+  margin: 0 auto; }
+  .star__paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem; }
+    .star__paragraph .star__title {
+      font-size: 3rem;
+      font-weight: 100;
+      color: #acabab;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 5rem; }
+    .star__paragraph .star__border-left,
+    .star__paragraph .star__border-right {
+      position: relative;
+      top: -0.6rem;
+      color: #ececec; }
+  .star__container {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+    .star__container .luggage {
+      margin-right: 2px;
+      transition: box-shadow 0.3s;
+      display: flex; }
+      .star__container .luggage:hover {
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2); }
+  .star__3other {
+    display: flex;
+    flex-direction: column; }
+    .star__3other-top {
+      display: flex;
+      margin-bottom: 2px; }
+      .star__3other-top-1 {
+        display: flex;
+        transition: box-shadow 0.3s;
+        margin-right: 2px; }
+        .star__3other-top-1:hover {
+          box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2); }
+      .star__3other-top-2 {
+        display: flex;
+        transition: box-shadow 0.3s; }
+        .star__3other-top-2:hover {
+          box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2); }
+    .star__3other-bottom {
+      display: flex;
+      transition: box-shadow 0.3s; }
+      .star__3other-bottom:hover {
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2); }
+
+.sub-menus .miphones {
+  position: absolute;
+  top: 50rem;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  font-size: 1.4rem;
+  color: var(--color-black);
+  transition: all 0.4s; }
+  .sub-menus .miphones__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; }
+    .sub-menus .miphones__list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem; }
+      .sub-menus .miphones__list-item a:link,
+      .sub-menus .miphones__list-item a:visited,
+      .sub-menus .miphones__list-item a:active {
+        text-decoration: none;
+        color: var(--color-black); }
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  margin: 0 30rem; }
+  .top-nav__item {
+    cursor: pointer;
+    padding: 0 2rem;
+    border: none; }
+    .top-nav__item:not(:last-child) {
+      border-right: 1px solid #424242; }
+    .top-nav__item:hover {
+      color: var(--color-white); }
+
+.top3__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -8rem; }
+  .top3__container-box {
+    overflow: hidden;
+    transition: box-shadow 0.4s; }
+    .top3__container-box:not(:last-child) {
+      margin-right: 1.7rem; }
+    .top3__container-box:hover {
+      box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2); }
+
+.videos {
+  max-width: 120rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 7rem 0; }
+  .videos__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .videos__container--redmi {
+      height: 30rem;
+      width: 40rem;
+      margin-right: 1.5rem; }
+      .videos__container--redmi-1 {
+        height: 30rem;
+        width: 40rem; }
+    .videos__container--note {
+      height: 30rem;
+      width: 40rem;
+      margin-right: 1.5rem; }
+      .videos__container--note-2 {
+        height: 30rem;
+        width: 40rem; }
+    .videos__container--smart {
+      height: 30rem;
+      width: 40rem; }
+      .videos__container--smart-3 {
+        height: 30rem;
+        width: 40rem; }
+
+.top-header {
+  color: var(--color-grey);
+  font-size: 1.2rem;
+  background-color: var(--color-black);
+  padding: 1.3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  text-transform: uppercase; }

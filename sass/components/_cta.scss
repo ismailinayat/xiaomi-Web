@@ -1,0 +1,98 @@
+.cta {
+  display: flex;
+  max-width: 123rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container-left {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container-input {
+
+    &-email {
+
+      padding: 0.9rem;
+      padding-left: 2rem;
+      width: 25rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      outline: none;
+
+      &::-webkit-input-placeholder {
+        color:  rgba(0, 0, 0, 0.6);
+      }
+    }
+    & button {
+      margin-left: -2rem;
+      border: none;
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+  }
+
+  &__container-text-left {
+    margin-right: 5rem;
+    
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  &__paragraph {
+    font-size: 1.1rem;
+    color: rgb(46, 45, 45);
+  }
+
+  &__container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+  }
+
+  &__container-text-right {
+    margin-right: 5rem;
+  }
+
+  &__container-icon {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+
+    & svg {
+      width: 1.7rem;
+      height: 1.7rem;
+      fill: rgba(0, 0, 0, 0.3);
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    & .facebook:hover {
+      fill: rgb(66,103,178);
+    }
+    & .youtube:hover {
+      fill: rgb(255,22,0);
+    }
+
+    & .insta:hover {
+      fill: rgb(204,11,121);
+    }
+    & .twitter:hover {
+      fill: rgb(86,213,253);
+    }
+  }
+}

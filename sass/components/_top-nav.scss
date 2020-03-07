@@ -1,0 +1,22 @@
+.top-nav {
+  list-style: none;
+  display: flex;
+  margin: 0 30rem;
+
+  &__item {
+    cursor: pointer;
+    padding: 0 2rem;
+    border: none;
+    
+    &:not(:last-child) {
+
+      border-right: 1px solid #424242;
+    }
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+}
+

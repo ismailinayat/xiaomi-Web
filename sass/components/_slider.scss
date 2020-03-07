@@ -1,0 +1,82 @@
+
+.slider {
+  width: 100%;
+  height: 80rem;
+  overflow: hidden;
+  position: relative;
+  top: -10rem;
+  z-index: -1;
+
+  &__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    &:first-child {
+      background: url(../img/Slider/F4-Mi-Note10-PC02.jpg) no-repeat center center/cover;
+    }
+    &:nth-child(2) {
+      background: url(../img/Slider/F3B-Global-PC.jpg) no-repeat center top/cover;
+    }
+    &:nth-child(3) {  
+      background: url(../img/Slider/g7-Global-pc.jpg) no-repeat center top/cover;
+    }
+    &:nth-child(4) {
+      background: url(../img/Slider/u2-Banner-Design-Code-PC.jpg) no-repeat center top/cover;
+    }
+  }
+
+  &__current {
+    opacity: 1;
+  }
+
+  &__buttons {
+    &--prev {
+      position: absolute;
+      top: 40%;
+      left: 3rem;
+      background-color: transparent;
+      border: none;
+      transition: all 0.2s;
+      outline: none;
+      cursor: pointer;
+
+      & .svg-prev {
+        width: 5rem;
+        height: 5rem;
+        fill: var(--color-white);
+      }
+
+      &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+    &--next {
+      position: absolute;
+      color: white;
+      top: 40%;
+      right: 3rem;
+      background-color: transparent;
+      border: none;
+      transition: all 0.2s;
+      outline: none;
+      cursor: pointer;
+
+      & .svg-next {
+        width: 5rem;
+        height: 5rem;
+        fill: var(--color-white);
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+    }
+  }
+} 
